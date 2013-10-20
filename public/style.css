@@ -1,0 +1,23 @@
+body{
+	height: 100%;
+	width: 100%;
+}
+
+#stage{
+	height: 100%;
+	width: 100%;
+	position: absolute;
+}
+
+.players {
+  height: 100%;
+	width: 80%;
+ 	border: 7px solid yellow;
+	background: pink;
+	opacity: .3;
+	position: absolute;
+}
+
+.scene {
+	opacity: 1;
+}
