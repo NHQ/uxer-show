@@ -2,6 +2,9 @@
 
 Pure javascript slider logic.  The show is about to begin...
 
+```
+npm install uxer-show
+```
 ## usage
 
 This browserify-like module makes a slideshow out of a parent element's children. It works vertically and horizontally.
