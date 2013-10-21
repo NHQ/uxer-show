@@ -4,9 +4,13 @@ Pure javascript slider logic.  The show is about to begin...
 
 ## usage
 
-This browserify-like module makes a slideshow out of a parent element's children. The only style modifications it makes is to translate the slides. There are no css files (although you can see the demo css in /public). All styles, including transition timing, are for you to decide.
+This browserify-like module makes a slideshow out of a parent element's children. It works vertically and horizontally.
 
-The constructor takes a three params: parent ID, direction ('top' || 'left'), and an starting index. It returns 3 functions: previous(), next(), and goTo(index).
+The only style modifications it makes is to translate the slides. There are no css files (although you can see the demo css in /public). All styles, including transition timing, are for you to decide.
+
+The constructor takes a three params: parent ID, direction ('top' || 'left'), and an starting index. 'left' is for horzintal transitions, 'top' for vertical. 
+
+It returns 3 functions: previous(), next(), and goTo(index).
 
 The current element is given css class 'scene'.
 
