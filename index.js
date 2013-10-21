@@ -3,13 +3,8 @@ var prefixer = require('./prefix');
 
 module.exports = show
 
-var doc = document;
-var body = doc.body;
-var iw = window.innerWidth;
-var ih = window.innerHeight;
-var prefix = prefixer().css
-
 function show(title, direction, start){	
+	var prefix = prefixer().css
 	var theatre = setStage(title, direction)
 	var stage = theatre.stage
 	var players = theatre.players
@@ -50,7 +45,7 @@ function show(title, direction, start){
 				e.classList.add('scene');
 				currentIndex = i
 			}
-			e.style['-'+prefix+'-transform'] = 'translate'+t+'('+ (diff) +'px)'
+			e.style[prefix+'transform'] = 'translate'+t+'('+ (diff) +'px)'
 			e.style['transform'] = 'translate'+t+'('+ (diff) +'px)'
 		})
 		offset = diff
