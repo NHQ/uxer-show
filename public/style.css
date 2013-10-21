@@ -16,6 +16,10 @@ body{
 	background: pink;
 	opacity: .3;
 	position: absolute;
+	-webkit-transition: -webkit-transform .6s cubic-bezier(0.455, 0.020, 0.000, 1.0);
+	-o-transition: -webkit-transform .6s cubic-bezier(0.455, 0.020, 0.000, 1.0);
+	-moz-transition: -webkit-transform .6s cubic-bezier(0.455, 0.020, 0.000, 1.0);
+	transition: -webkit-transform .6s cubic-bezier(0.455, 0.020, 0.000, 1.0);
 }
 
 .scene {

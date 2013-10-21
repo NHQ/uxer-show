@@ -5,7 +5,7 @@ var getCSS = require('compute-style')
 module.exports = function(children, direction){
 	
 	var players = Array.prototype.map.call(stage.children, function(player,i){
-		player.id += uuid.generate()
+		if(!player.id.length) player.id = uuid.generate();
 		player.uxer = {};
 		player.uxer.width = getCSS(player, 'width').primitive.val
 		player.uxer.height = getCSS(player, 'height').primitive.val
