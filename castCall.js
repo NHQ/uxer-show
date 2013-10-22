@@ -1,15 +1,18 @@
 var uuid = require('short-id')
-var getCSS = require('compute-style')
-;
+var getCSS = function(el, prop){
+	var propValue = document.defaultView.getComputedStyle(el).getPropertyValue(prop)
+	if(!propValue) throw new Error("No prop valueValue. Is the element appended to the document yet?")
+	if(!propValue) return false
+	return (parseInt(propValue) || 0)
+};
 
 module.exports = function(children, direction){
 	
 	var players = Array.prototype.map.call(stage.children, function(player,i){
 		if(!player.id.length) player.id = uuid.generate();
 		player.uxer = {};
-		player.uxer.width = getCSS(player, 'width').primitive.val
-		player.uxer.height = getCSS(player, 'height').primitive.val
-		
+		player.uxer.width = getCSS(player, 'width')//.primitive.val
+		player.uxer.height = getCSS(player, 'height')//.primitive.val
 		return player
 	});
 	
