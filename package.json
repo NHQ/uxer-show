@@ -11,7 +11,8 @@
     "url": "git@github.com:NHQ/uxer-show.git"
   },
   "dependencies": {
-    "compute-style": ""
+    "compute-style": "",
+	"short-id" : ""
   },
   "keywords": [
     "html",
